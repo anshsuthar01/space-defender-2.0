@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Defender 🚀</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🚀 SPACE DEFENDER</h1>
+
+        <div class="hud">
+            <span>Score: <b id="score">0</b></span>
+            <span>Lives: <b id="lives">❤️❤️❤️❤️❤️</b></span>
+            <span>Level: <b id="level">1</b></span>
+        </div>
+
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+        <div id="startScreen" class="screen">
+            <h2>SPACE DEFENDER</h2>
+            <p>Destroy the enemy ships and survive!</p>
+            <p>Move: <b>← →</b> or <b>A D</b></p>
+            <p>Fire: hold <b>SPACE</b> (continuous fire)</p>
+            <p>Collect falling <b>❤️</b> to gain extra lives</p>
+            <button onclick="startGame()">START GAME</button>
+        </div>
+
+        <div id="gameOverScreen" class="screen hidden">
+            <h2>💥 GAME OVER</h2>
+            <p>Your Score: <b id="finalScore">0</b></p>
+            <button onclick="startGame()">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
